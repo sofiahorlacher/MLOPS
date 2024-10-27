@@ -1,19 +1,7 @@
 # main.py
 
-
 import subprocess
 import sys
-
-def install_packages():
-    packages = [
-        "torch", "transformers", "lightning", "datasets",
-        "wandb", "evaluate", "ipywidgets", "optuna"
-    ]
-    for package in packages:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-install_packages()
-
 import argparse
 import os
 import wandb
