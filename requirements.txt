@@ -1,0 +1,8 @@
+torch
+transformers
+lightning
+datasets
+wandb
+evaluate
+ipywidgets
+optuna
