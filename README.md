@@ -2,7 +2,7 @@
 
 This repository contains a containerized machine learning pipeline. The project is designed to run a training script inside a Docker container, with the ability to track experiments using Weights and Biases (W&B).
 
-## Prerequisites
+## Preconditions
 
 Before running the project, make sure you have the following installed:
 
