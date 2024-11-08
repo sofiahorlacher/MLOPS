@@ -21,4 +21,4 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["python", "main.py", "--checkpoint_dir", "models", "--learning_rate", "2e-05", "--batch_size", "32", "--optimizer", "adam", "--warmup_steps", "200", "--scheduler", "linear_warmup", "--weight_decay", "0.0", "--projectname", "test", "--epochs", "3"]
+CMD ["python", "src/main.py", "--checkpoint_dir", "models", "--learning_rate", "2e-05", "--batch_size", "32", "--optimizer", "adam", "--warmup_steps", "200", "--scheduler", "linear_warmup", "--weight_decay", "0.0", "--projectname", "test", "--epochs", "3"]
