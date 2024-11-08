@@ -7,8 +7,8 @@ import os
 import wandb
 import torch
 import lightning as L
-from data_module import GLUEDataModule
-from model import GLUETransformer
+from src.data_module import GLUEDataModule
+from src.model import GLUETransformer
 from lightning.pytorch.loggers import WandbLogger
 from lightning.pytorch.callbacks import ModelCheckpoint
 
