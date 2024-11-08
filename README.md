@@ -25,11 +25,12 @@ cd MLOPS
 ```
 
 ### 2. Build the Docker Image
-Create a new Docker context. If needed, you can overwrite Docker settings with the --docker "host=xy" option:
+Create a new Docker context:
 ```bash
 docker context create mlops
 docker context use mlops
 ```
+If needed, you can overwrite Docker settings with the --docker argument. 
 
 Then, build the Docker image using the following command:
 ```bash
