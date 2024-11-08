@@ -44,6 +44,8 @@ docker --context mlops run -it main
 ```
 You will be prompted in the terminal to choose how you want to log in to Weights and Biases (W&B). Choose the option that fits you best and follow the steps provided in the console.
 
+![Weights & Biases login](images/wandb.png)
+
 ## Troubleshooting
 If you encounter any issues:
 
