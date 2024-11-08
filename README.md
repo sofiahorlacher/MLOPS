@@ -42,13 +42,12 @@ Once the image is built, you can run the training script inside the container wi
 ```bash
 docker --context mlops run -it main
 ```
-You will be prompted in the terminal to choose how you want to log in to Weights and Biases (W&B). Choose the option that fits you best and follow the steps provided in the console.
+You will be prompted in the terminal to choose how you want to log in to Weights and Biases (W&B). Choose the option that fits you best and follow the steps provided in the console. Should be looking like this:
 
 ![Weights & Biases login](images/wandb.png)
 
 ## Troubleshooting
 If you encounter any issues:
-
-Make sure Docker Desktop is running.
-Verify that you are using the correct context by running docker context ls and checking that the context is set to mlops.
-If you have trouble with Docker permissions, try restarting Docker or your terminal.
+- Make sure Docker Desktop is running.
+- Verify that you are using the correct context by running docker context ls and checking that the context is set to mlops.
+- If you have trouble with Docker permissions, try restarting Docker or your terminal.
