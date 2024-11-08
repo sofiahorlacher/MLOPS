@@ -19,14 +19,5 @@ COPY . /app
 RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
 USER appuser
 
-ENV LEARNING_RATE=2e-05
-ENV BATCH_SIZE=32
-ENV OPTIMIZER=adam
-ENV WARMUP_STEPS=200
-ENV SCHEDULER=linear_warmup
-ENV WEIGHT_DECAY=0.0
-ENV PROJECTNAME=test
-ENV EPOCHS=3
-
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["python", "main.py", "--checkpoint_dir", "models", "--learning_rate", "${LEARNING_RATE}", "--batch_size", "${BATCH_SIZE}", "--optimizer", "${OPTIMIZER}", "--warmup_steps", "${WARMUP_STEPS}", "--scheduler", "${SCHEDULER}", "--weight_decay", "${WEIGHT_DECAY}", "--projectname", "${PROJECTNAME}", "--epochs", "${EPOCHS}"]
+CMD ["python", "main.py", "--checkpoint_dir", "models", "--learning_rate", "2e-05", "--batch_size", "32", "--optimizer", "adam", "--warmup_steps", "200", "--scheduler", "linear_warmup", "--weight_decay", "0.0", "--projectname", "test", "--epochs", "3"]

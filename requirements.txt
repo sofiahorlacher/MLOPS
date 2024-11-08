@@ -6,3 +6,5 @@ wandb
 evaluate
 ipywidgets
 optuna
+scipy
+scikit-learn
