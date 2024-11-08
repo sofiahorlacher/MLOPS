@@ -8,6 +8,7 @@ Before running the project, make sure you have the following installed:
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) application
 - A terminal/command-line interface
+- [Docker Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) in Visual Studio by Microsoft
 
 ## Steps to Run Locally
 
