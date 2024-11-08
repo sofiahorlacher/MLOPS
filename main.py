@@ -15,7 +15,7 @@ from lightning.pytorch.callbacks import ModelCheckpoint
 def run_experiment(args):
     # Set up WandB
     wandb_logger = WandbLogger(project=args.projectname, log_model=True)
-    run_name = f"lr={args.learning_rate}_opt={args.optimizer}_wd={args.weight_decay}_bs={args.batch_size}_sched={args.scheduler}_warmup={args.warmup_steps}"
+    run_name = f"lr={args.learning_rate}_opt={args.optimizer}_wd={args.weight_decay}_bs={args.batch_size}_sched={args.scheduler}_warmup={args.warmup_steps}_msl={args.max_seq_length}"
     wandb_logger.experiment.name = run_name
     wandb_logger.log_hyperparams(vars(args))
 
@@ -37,7 +37,6 @@ def run_experiment(args):
         warmup_steps=args.warmup_steps,
         weight_decay=args.weight_decay,
         train_batch_size=args.batch_size,
-        eval_batch_size=args.batch_size,
         optimizer=args.optimizer, 
         scheduler=args.scheduler
     )
