@@ -47,6 +47,11 @@ You will be prompted in the terminal to choose how you want to log in to Weights
 
 ![Weights & Biases login](images/wandb.png)
 
+If you have an API key from Weights and Biases you can pass it directly into the run command like this:
+```bash
+docker --context mlops run --env WANDB_API_KEY=key -it main
+```
+
 ## Troubleshooting
 If you encounter any issues:
 - Make sure Docker Desktop is running.
