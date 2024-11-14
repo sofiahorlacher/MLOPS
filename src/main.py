@@ -63,6 +63,13 @@ def run_experiment(args):
     print(f"Validation Loss: {val_loss}")
 
     wandb.log({"val_loss": val_loss})
+
+    best_checkpoint_path = checkpoint_callback.best_model_path
+    if best_checkpoint_path:
+        print(f"Logging best checkpoint at {best_checkpoint_path} to W&B.")
+        artifact = wandb.Artifact(name="best_model_checkpoint", type="model")
+        artifact.add_file(best_checkpoint_path)
+        wandb.log_artifact(artifact)
     wandb.finish()
 
 if __name__ == "__main__":
