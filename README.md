@@ -68,8 +68,6 @@ Here is an overview of all the possible parameters to be passed and their defaul
 | `--epochs`         | `int`   | `3`                      | Number of training epochs.                                                                      |
 
 
-
-
 You will be prompted in the terminal to choose how you want to log in to Weights and Biases (W&B). Choose the option that fits you best and follow the steps provided in the console. Should be looking like this:
 
 ![Weights & Biases login](images/wandb.png)
@@ -121,4 +119,4 @@ If you want to run a custom training command you can specify the hyperparameter 
 ```bash
 python src/main.py --checkpoint_dir models --learning_rate 2e-05 --batch_size 32 --optimizer adam --warmup_steps 200 --scheduler linear_warmup --weight_decay 0.0 --projectname test 
 ```
-Check the table above what parameters you can pass.
+Check the table above to find out what parameters you can pass into the training run.
